@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <style>
+        body{
+        text-align:center;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick="
+    
+    console.log('You have choosen BAT');
+    alert('You have choosen BAT');
+
+    genarateComputerChoice();
+
+
+    if(computerchoice === 'Ball')//ekhan kar ball ta holo computer choice e jei ball utheche seta
+    {
+        console.log('You won the match');
+        alert('You won the match');
+    } 
+    else if(computerchoice === 'Bat') //ekhan kar bat ta holo computer choice e jei bat utheche seta  
+    {
+        //'' , `` sob use kora jay ... jehetu 's use kora hochhe tai `` use korlam
+        console.log(`It's tie match`);
+        alert(`It's tie match`);
+    }
+    else if(computerchoice === 'Stump')//ekhan kar stump ta holo computer choice e jei stump utheche seta
+    {
+        console.log(`Computer won the match`);
+        alert('Computer won the match');
+    }
+    ">Bat</button>
+
+
+
+    <button onclick="
+    console.log('You have choosen BALL');
+    alert('You have choosen BALL');
+
+    genarateComputerChoice();
+   
+
+    if(computerchoice === 'Ball')
+    {
+        console.log(`It's tie match`);
+        alert(`It's tie match`);
+    } 
+    else if(computerchoice === 'Bat')   
+    {
+        //'' , `` sob use kora jay ... jehetu 's use kora hochhe tai `` use korlam
+        console.log('Computer won the match');
+        alert('Computer won the match');
+    }
+    else if(computerchoice === 'Stump')
+    {
+        console.log(`You won the match`);
+        alert('You won the match');
+    }
+    ">Ball</button>
+
+
+
+    <button onclick="
+    console.log('You have choosen STUMP');
+    alert('You have choosen STUMP');
+    
+
+    genarateComputerChoice();
+
+
+    if(computerchoice === 'Ball')
+    {
+        console.log(`Computer won the match`);
+        alert(`Computer won the match`);
+    } 
+    else if(computerchoice === 'Bat')   
+    {
+        //'' , `` sob use kora jay ... jehetu 's use kora hochhe tai `` use korlam
+        console.log('You won the match');
+        alert('You won the match');
+    }
+    else if(computerchoice === 'Stump')
+    {
+        console.log(`It's a tie match`);
+        alert(`It's a tie match`);
+    }
+    ">stump</button>
+
+<script>
+
+
+    let computerchoice;
+    function genarateComputerChoice()
+    {
+        //this will genarate random number bettween 0 to 3
+        let randomnumber=Math.random()*3;
+
+        if(randomnumber>0 && randomnumber<=1)
+        {
+            computerchoice='Bat';
+            //console.log('Computer choice is Bat');
+            alert('Computer choice is BAT');
+        }
+        else if(randomnumber>1 && randomnumber<=2)
+        {
+            computerchoice='Ball';
+            //console.log('Computer choice is Ball');
+            alert('Computer choice is BALL');
+        }
+        else
+        {
+            computerchoice='Stump';
+            //console.log('Computer choice is Stump');
+            alert('Computer choice is STUMP');
+        }
+        console.log (`Computer choice is ${computerchoice}`);
+    }
+ </script>
+</body>
+</html>
